@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    padding: 0 50px;
+}
+
+b.header-text-sm {
+    color: #FF002E;
+
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+
+    display: block;
+    margin-top: 70px;
+}
+
+h1.header-text {
+    margin-top: 5px;
+    font-size: 38px;
+    font-family: "Lato", sans-serif;
+    width: 400px;
+}
+
+.foods {
+    margin-top: 30px;
+
+    display: flex;
+    column-gap: 40px;
+    flex-wrap: wrap;
+}
+
+.food-item {
+    width: 300px;
+    height: 360px;
+    background-color: red;
+    border-radius: 11px;
+
+    background-size: cover;
+    
+    position: relative;
+}
+
+.darker {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    filter: opacity(0.5);
+    border-radius: 11px;
+}
+
+.content {
+    position: absolute;
+    color: white;
+
+    width: calc(100% - 24px);
+    bottom: 30px;
+    left: 24px;
+}
+
+.content h4 {
+    font-size: 24px;
+    font-family: "Lato", sans-serif;
+}
+
+.content b span {
+    font-size: 24px;
+    font-family: "Lato", sans-serif;
+}
+
+.content b span.currency {
+    color: #FFC700;
+    font-size: 16px;
+}
+
+.plus-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 35px;
+    height: 35px;
+
+    background-color: #FF002E;
+    border-radius: 50%;
+
+    transition: all 0.2s ease-in;
+
+    position: absolute;
+    bottom: 0;
+    right: 24px;
+}
+
+.plus-icon:hover {
+    background-color: #870019;
+    cursor: pointer;
+}
+
+
+.food-item:nth-child(1) {
+    background-image: url("https://images.deliveryhero.io/image/fd-ph/Products/24821147.jpg?width=%s");
+    background-position: center center;
+}
+
+.food-item:nth-child(2) {
+    background-image: url("https://sallysbakingaddiction.com/wp-content/uploads/2014/05/sugar-cookie-fruit-pizza.jpg");
+}
+
+.food-item:nth-child(3) {
+    background-image: url("https://www.healingtomato.com/wp-content/uploads/2015/02/red-cabbage-pizza.jpg");
+}
+
